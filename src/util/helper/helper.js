@@ -1,10 +1,18 @@
-import key from '../key.js';
+import key from "../key.js";
 
-
-export const getMovie = async (input) => {
-  const url = `https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=1&q=${input}`
+export const getMusic = async input => {
+  const url = `https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=5&q=${input || 'redhotchilipeppers'}`;
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
   return data;
+};
+
+export const getMovie = async input => {
+  const url = `https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=5&q=${input || 'deadpool' }`;
+  const response = await fetch(url);
+  const movies = await response.json();
+  return movies;
 }
+
+
+
