@@ -3,7 +3,7 @@ import { tvShowReducer } from "../tvShowReducer";
 describe("tvShowReducer", () => {
   it("should return initial state if type does not match", () => {
     const expected = [];
-    const TvShow = {
+    const tvShow = {
       name: "who knows",
       title: "another title",
       teaser: "another teaser",
@@ -11,29 +11,29 @@ describe("tvShowReducer", () => {
     };
     const action = {
       type: "DUMMY_TYPE",
-      TvShow
+      tvShow
     };
     const result = tvShowReducer(undefined, action);
     expect(result).toEqual(expected);
   });
   it("should update state if type matches", () => {
-    const TvShow = {
+    const tvShow = {
       name: "who knows",
       title: "another title",
       teaser: "another teaser",
       Link: "www.Link.com"
     };
-    const expected = TvShow;
+    const expected = tvShow;
     const action = {
       type: "TV_SHOW",
-      TvShow
+      tvShow
     };
     const result = tvShowReducer(undefined, action);
     expect(result).toEqual(expected);
   });
 
   it("should always update state with a new string if type matches", () => {
-    const TvShow = [
+    const tvShow = [
       {
         name: "who knows",
         title: "another title",
@@ -42,7 +42,7 @@ describe("tvShowReducer", () => {
       }
     ];
 
-    const expected = TvShow;
+    const expected = tvShow;
 
     const mockState = [
       {
@@ -54,7 +54,7 @@ describe("tvShowReducer", () => {
     ];
     const action = {
       type: 'TV_SHOW',
-      TvShow
+      tvShow
     }
     const result = tvShowReducer(mockState,action)
 

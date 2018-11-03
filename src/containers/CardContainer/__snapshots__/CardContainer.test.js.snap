@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should match the snapshop 1`] = `
+<div>
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+</div>
+`;

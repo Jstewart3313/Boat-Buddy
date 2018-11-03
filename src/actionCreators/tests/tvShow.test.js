@@ -2,7 +2,7 @@ import { tvShowAction } from '../tvShow'
 
 describe('tvShow', () => {
   it('should return a tvShow action object', () => {
-    const TvShow = {
+    const tvShow = {
       name: 'who knows',
       title: 'another title',
       teaser: 'another teaser',
@@ -10,9 +10,9 @@ describe('tvShow', () => {
     }
     const expected = {
       type: 'TV_SHOW',
-      TvShow
+      tvShow
     }
-    const result = tvShowAction(TvShow)
+    const result = tvShowAction(tvShow)
 
     expect(result).toEqual(expected)
   })

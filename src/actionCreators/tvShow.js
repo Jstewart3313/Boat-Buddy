@@ -1,4 +1,4 @@
-export const tvShowAction = (TvShow) => ({
+export const tvShowAction = (tvShow) => ({
   type: 'TV_SHOW',
-  TvShow
+  tvShow
 })

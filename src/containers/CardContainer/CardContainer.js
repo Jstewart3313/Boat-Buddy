@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
 import { tvShowAction } from "../../actionCreators/tvShow";
+import { Card } from '../Card/Card'
 
 import * as API from "../../util/helper/helper";
 
@@ -11,21 +13,36 @@ export class CardContainer extends Component {
     const initialMovieData = await API.getMovie("deadpool");
     const initialMusicData = await API.getMusic("redhotchilipeppers");
     const initialTvShowData = await API.getTv("discovery");
-    console.log(initialTvShowData)
     this.props.onLoadTvShow(initialTvShowData);
     this.props.onLoadMovies(initialMovieData);
     this.props.onLoadMusic(initialMusicData);
   };
 
   render() {
-    return <div />;
+    const { movies, music, tvShow } = this.props;
+    const movieInfo = movies.map( movie => {
+      return <Card {...movie} />
+    });
+    const musicInfo = music.map( music => {
+      return <Card {...music} />
+    });
+    const TvShowInfo = tvShow.map(show => {
+      return <Card {...show} />
+    });
+    return (
+      <div>
+        { movieInfo }
+        { musicInfo }
+        { TvShowInfo }
+      </div>
+    )
   }
 }
 
 export const mapStateToProps = state => ({
   movies: state.movies,
   music: state.music,
-  tvShow: state.TvShow
+  tvShow: state.tvShow
 });
 
 export const mapDispatchToProps = dispatch => ({

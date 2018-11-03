@@ -1,4 +1,5 @@
 import key from "../key.js";
+const uuidv4 = require('uuid/v4');
 
 
 const dataCleaner = (data) => {
@@ -7,6 +8,7 @@ const dataCleaner = (data) => {
     type: dataPoint.Type,
     teaser: dataPoint.wTeaser,
     Link: dataPoint.yUrl,
+    id: dataPoint.yID
   }))
 }
 

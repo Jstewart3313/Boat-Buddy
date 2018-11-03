@@ -1,9 +1,7 @@
 import { key } from "./key";
 
 export const musicUrl =
-"https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=music&limit=10&q=redhotchilipeppers";
-
-  
+  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=music&limit=10&q=redhotchilipeppers";
 
 // export const mockMusic = [
 //   {
@@ -54,3 +52,42 @@ export const mockResult = {
     ]
   }
 };
+
+export const mockCleanData = [
+  {
+    Link: "https://www.youtube-nocookie.com/embed/SICLBlHizUY",
+    id: "4e5b7406-3a5d-4ff3-8b6e-4105e452a36b",
+    name: "Genius",
+    teaser:
+      "Genius is an American anthology period drama television      series developed by Noah Pink and  Kenneth Biller that             premiered    on April 25, 2017 on National Geographic.The first    season follows the life of Albert Einstein, from his early         years, through his time as a patent clerk, to his later years      as a physicist who developed the theory of relativity; the         season is based on the 2007 book Einstein: His Life and            Universe by Walter Isaacson. In April 2017, National Geographic    the series for a second season, which follows the life and         artistry of Pablo Picasso and aired from April 24 to June 19,   2018. In April 2018, National Geographic renewed the series for a third season set to follow the life of writer Mary Shelley.",
+    type: "show"
+  }
+];
+
+
+export const mockState = {
+  movies: [
+    {
+      name: "who knows",
+      title: "another title",
+      teaser: "another teaser",
+      Link: "www.Link.com"
+    }
+  ],
+  music: [
+    {
+      name: "who knows",
+      title: "another title",
+      teaser: "another teaser",
+      Link: "www.Link.com"
+    }
+  ],
+  tvShow: [
+    {
+      name: "who knows",
+      title: "another title",
+      teaser: "another teaser",
+      Link: "www.Link.com"
+    }
+  ]
+}
