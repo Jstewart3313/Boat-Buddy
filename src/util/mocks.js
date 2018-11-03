@@ -1,7 +1,9 @@
 import { key } from "./key";
 
 export const musicUrl =
-  "https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=music&limit=5&q=redhotchilipeppers";
+"https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=music&limit=10&q=redhotchilipeppers";
+
+  
 
 // export const mockMusic = [
 //   {
@@ -14,7 +16,7 @@ export const musicUrl =
 // ];
 
 export const movieUrl =
-  "https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=5&q=deadpool";
+  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=10&q=deadpool";
 
 // export const mockMovie = [{
 //     Link:"https://www.youtube-nocookie.com/embed/sGbxmsDFVnE",
@@ -24,7 +26,7 @@ export const movieUrl =
 // ]
 
 export const tvUrl =
-  "https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=tvshow&limit=5&q=discovery";
+  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=tvshow&limit=10&q=discovery";
 
 export const mockResult = {
   Similar: {

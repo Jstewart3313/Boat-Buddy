@@ -11,6 +11,7 @@ export class CardContainer extends Component {
     const initialMovieData = await API.getMovie("deadpool");
     const initialMusicData = await API.getMusic("redhotchilipeppers");
     const initialTvShowData = await API.getTv("discovery");
+    console.log(initialTvShowData)
     this.props.onLoadTvShow(initialTvShowData);
     this.props.onLoadMovies(initialMovieData);
     this.props.onLoadMusic(initialMusicData);
@@ -24,7 +25,7 @@ export class CardContainer extends Component {
 export const mapStateToProps = state => ({
   movies: state.movies,
   music: state.music,
-  tvShow: state.tvShow
+  tvShow: state.TvShow
 });
 
 export const mapDispatchToProps = dispatch => ({
