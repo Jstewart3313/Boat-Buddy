@@ -53,7 +53,7 @@ export const mockResult = {
   }
 };
 
-export const mockCleanData = [
+export const cleanData = [
   {
     Link: "https://www.youtube-nocookie.com/embed/SICLBlHizUY",
     id: "4e5b7406-3a5d-4ff3-8b6e-4105e452a36b",

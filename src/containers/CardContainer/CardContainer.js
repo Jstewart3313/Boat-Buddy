@@ -4,9 +4,9 @@ import { connect } from "react-redux";
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
 import { tvShowAction } from "../../actionCreators/tvShow";
-import { Card } from '../Card/Card'
-
 import * as API from "../../util/helper/helper";
+import { Card } from '../Card/Card';
+import './CardContainer.css';
 
 export class CardContainer extends Component {
   componentDidMount = async () => {
@@ -21,19 +21,25 @@ export class CardContainer extends Component {
   render() {
     const { movies, music, tvShow } = this.props;
     const movieInfo = movies.map( movie => {
-      return <Card {...movie} />
+      return <Card className='movie-card' {...movie} />
     });
     const musicInfo = music.map( music => {
-      return <Card {...music} />
+      return <Card className='music-card' {...music} />
     });
     const TvShowInfo = tvShow.map(show => {
-      return <Card {...show} />
+      return <Card className='tv-card' {...show} />
     });
     return (
       <div>
-        { movieInfo }
-        { musicInfo }
-        { TvShowInfo }
+        <div className='movie-container'>
+          { movieInfo }
+        </div>
+        <div className='music-container'>
+          { musicInfo }
+        </div>
+        <div className='tv-container'>
+          { TvShowInfo }
+        </div>
       </div>
     )
   }

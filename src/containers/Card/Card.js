@@ -3,11 +3,11 @@ import React from 'react';
 
 export const Card = ({name, type, teaser, Link}) => {
   return (
-    <div>
-    <h2> {name} </h2>
-    <h3> {type} </h3>
-    <p> {teaser} </p>
-    <p> {Link}</p>
+    <div className='card'>
+    <h2 className='name'> {name} </h2>
+    <h3 className='type'> {type} </h3>
+    <p className='teaser'> {teaser} </p>
+    <a href={Link}>Check it out on Youtube</a>
     </div>
   )
 }
