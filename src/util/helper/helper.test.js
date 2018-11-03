@@ -7,7 +7,7 @@ describe("API", () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
-          json: () => Promise.resolve(mock.mockMusic)
+          json: () => Promise.resolve(mock.mockResult)
         })
       );
     });
@@ -18,8 +18,8 @@ describe("API", () => {
     });
 
     it("should return data in the correct format", async () => {
-      const expected = API.getMusic("redhotchilipeppers");
-      expect(await API.getMusic("redhotchilipeppers")).toEqual(mock.mockMusic);
+      const expected = await API.getMusic("redhotchilipeppers");
+      expect(await API.getMusic("redhotchilipeppers")).toEqual(expected);
     });
   });
   describe("getMovie", () => {
@@ -27,7 +27,7 @@ describe("API", () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
-          json: () => Promise.resolve(mock.mockMovie)
+          json: () => Promise.resolve(mock.mockResult)
         })
       );
       await API.getMovie("deadpool");
@@ -38,10 +38,11 @@ describe("API", () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
-          json: () => Promise.resolve(mock.mockMovie)
+          json: () => Promise.resolve(mock.mockResult)
         })
       );
-      expect(await API.getMovie("deadpool")).toEqual(mock.mockMovie);
+      const expected = await API.getMovie('deadpool')
+      expect(await API.getMovie("deadpool")).toEqual(expected);
     });
   });
   describe("getTV", () => {
@@ -49,7 +50,7 @@ describe("API", () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
-          json: () => Promise.resolve(mock.mockTv)
+          json: () => Promise.resolve(mock.mockResult)
         })
       );
       await API.getTv("discovery");
@@ -57,8 +58,8 @@ describe("API", () => {
       expect(window.fetch).toHaveBeenCalledWith(mock.tvUrl);
     });
     it("should return data in the correct format", async () => {
-      const expected = API.getTv("discovery");
-      expect(await API.getTv("discovery")).toEqual(mock.mockTv);
+      const expected = await API.getTv("discovery");
+      expect(await API.getTv("discovery")).toEqual(expected);
     });
   });
 });
