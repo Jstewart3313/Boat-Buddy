@@ -1,7 +1,7 @@
 export const musicReducer = ( state = [], action) => {
   switch(action.type) {
     case 'MUSIC':
-    return [...state,...action.music]
+    return action.music
     default:
     return state
   }
