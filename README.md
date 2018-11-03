@@ -41,7 +41,7 @@ Additional enhancments could include :
 
 ### Original Assignment
 
-[Movie-Tracker](http://frontend.turing.io/projects/binary-challenge.html) from the Turing School of Software & Design
+[Binary-Challenge](http://frontend.turing.io/projects/binary-challenge.html) from the Turing School of Software & Design
 
 ### Contributors
 
