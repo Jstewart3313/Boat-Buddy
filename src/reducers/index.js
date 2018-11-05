@@ -6,13 +6,13 @@ import { incrementMovieReducer } from "./incrementMovieReducer";
 import { incrementMusicReducer } from "./incrementMusicReducer";
 import { incrementTvShowReducer } from "./incrementTvShowReducer";
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   movies: movieReducer,
   music: musicReducer,
   tvShow: tvShowReducer,
-  MovieCounter: incrementMovieReducer,
-  MusicCounter: incrementMusicReducer,
-  TvShowCounter: incrementTvShowReducer
+  movieCounter: incrementMovieReducer,
+  musicCounter: incrementMusicReducer,
+  tvShowCounter: incrementTvShowReducer
 });
 
-export default rootReducer;
+

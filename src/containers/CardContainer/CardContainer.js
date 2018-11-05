@@ -4,9 +4,9 @@ import { connect } from "react-redux";
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
 import { tvShowAction } from "../../actionCreators/tvShow";
-import { Summary } from '../Summary/summary'
+import  Summary  from '../Summary/summary';
 import * as API from "../../util/helper/helper";
-import { Card } from '../Card/Card';
+import Card from '../Card/Card';
 import './CardContainer.css';
 
 export class CardContainer extends Component {

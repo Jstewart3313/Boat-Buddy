@@ -1,26 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import "./Card.css";
 import { incrementMusicAction } from "../../actionCreators/incrementMusicAction";
 import { incrementMovieAction } from "../../actionCreators/incrementMovieAction";
 import { incrementTvShowAction } from "../../actionCreators/incrementTvShowAction";
 
-export const Card = ({ name, type, Link, incrementMovie, incrementTvShow, incrementMusic }) => {
+export const Card = ( props) => {
   const handleClick = event => {
     const { name } = event.target;
     if (name === "movie") {
-      incrementMovie(name);
+      props.incrementMovie(name);
     } else if (name === "show") {
-      incrementTvShow(name);
+      props.incrementTvShow(name);
     } else {
-      incrementMusic(name);
+      props.incrementMusic(name);
     }
   };
 
   return (
     <div className="card">
-      <a className='link' href={Link}>{name}</a>
-      <button className="done" onClick={handleClick} name={type}>
+      <a className='link' href={props.Link}>{props.name}</a>
+      <button className="done" onClick={handleClick} name={props.type}>
         DONE
       </button>
     </div>
@@ -33,4 +33,4 @@ export const mapDispatchToProps = (dispatch) => ({
   incrementTvShow: (name) => dispatch(incrementTvShowAction(name))
 });
 
-export default connect(undefined , mapDispatchToProps)(Card);
+export default connect(null , mapDispatchToProps)(Card);
