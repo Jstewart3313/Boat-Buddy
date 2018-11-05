@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
 import { tvShowAction } from "../../actionCreators/tvShow";
+import { Summary } from '../Summary/summary'
 import * as API from "../../util/helper/helper";
 import { Card } from '../Card/Card';
 import './CardContainer.css';
@@ -30,12 +31,13 @@ export class CardContainer extends Component {
       return <Card className='tv-card' {...show} />
     });
     return (
-      <div>
-        <div className='movie-container'>
-          { movieInfo }
-        </div>
+      <div className='container'>
+        < Summary />
         <div className='music-container'>
           { musicInfo }
+        </div>
+        <div className='movie-container'>
+          { movieInfo }
         </div>
         <div className='tv-container'>
           { TvShowInfo }

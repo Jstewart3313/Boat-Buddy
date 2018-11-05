@@ -6,7 +6,6 @@ const dataCleaner = (data) => {
   return data.Results.map((dataPoint) => ({
     name: dataPoint.Name,
     type: dataPoint.Type,
-    teaser: dataPoint.wTeaser,
     Link: dataPoint.yUrl,
     id: dataPoint.yID
   }))

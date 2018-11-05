@@ -1,3 +1,20 @@
+.container {
+  display: flex;
+}
+
 .movie-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
   background-color: peru;
+}
+.tv-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: cornflowerblue;
+}
+
+.music-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: wheat;
 }

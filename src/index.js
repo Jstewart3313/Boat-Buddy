@@ -11,7 +11,6 @@ const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_
 
 
 const store = createStore(rootReducer, devTools)
-console.log(store)
 
 
 ReactDOM.render(
