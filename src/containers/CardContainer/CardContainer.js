@@ -33,13 +33,16 @@ export class CardContainer extends Component {
     return (
       <div className='container'>
         < Summary />
-        <div className='music-container'>
+        <div className='music-container small-container'>
+          <h2 className='titles'>MUSIC</h2>
           { musicInfo }
         </div>
-        <div className='movie-container'>
+        <div className='movie-container small-container'>
+          <h2 className='titles'>MOVIES</h2>
           { movieInfo }
         </div>
-        <div className='tv-container'>
+        <div className='tv-container small-container'>
+          <h2 className='titles'>SHOWS</h2>
           { TvShowInfo }
         </div>
       </div>

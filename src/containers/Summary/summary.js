@@ -4,10 +4,10 @@ export const Summary = () => {
 
 
   return (
-    <div>
+    <div className='summary'>
       <h2>Movies: </h2>
       <h2>Music: </h2>
-      <h2>TvShows: </h2>
+      <h2>Shows: </h2>
     </div>
   )
 }

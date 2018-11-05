@@ -19,9 +19,9 @@ export const Card = ({ name, type, Link, incrementMovie, incrementTvShow, increm
 
   return (
     <div className="card">
-      <a href={Link}>{name}</a>
+      <a className='link' href={Link}>{name}</a>
       <button className="done" onClick={handleClick} name={type}>
-        Done
+        DONE
       </button>
     </div>
   );
