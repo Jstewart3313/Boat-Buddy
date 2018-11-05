@@ -5,6 +5,22 @@ h1 {
   font-weight: 300;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mission-link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.home-link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   margin: 0px 90px 0px 90px;

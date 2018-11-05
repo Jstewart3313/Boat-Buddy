@@ -1,30 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./Card.css";
 import { incrementMusicAction } from "../../actionCreators/incrementMusicAction";
 import { incrementMovieAction } from "../../actionCreators/incrementMovieAction";
 import { incrementTvShowAction } from "../../actionCreators/incrementTvShowAction";
 
-export const Card = ( props) => {
-  const handleClick = event => {
+export class Card extends Component{
+  constructor() {
+    super();
+    this.state = {
+      done: false
+    }
+  }
+  handleClick = event => {
     const { name } = event.target;
-    if (name === "movie") {
-      props.incrementMovie(name);
-    } else if (name === "show") {
-      props.incrementTvShow(name);
+    if (this.state.done === false) {
+      this.setState({ done: true })
     } else {
-      props.incrementMusic(name);
+      this.setState({ done: false})
+    }
+    if (name === "movie") {
+      this.props.incrementMovie(name);
+    } else if (name === "show") {
+      this.props.incrementTvShow(name);
+    } else {
+      this.props.incrementMusic(name);
     }
   };
-
-  return (
-    <div className="card">
-      <a className='link' href={props.Link}>{props.name}</a>
-      <button className="done" onClick={handleClick} name={props.type}>
-        DONE
-      </button>
-    </div>
-  );
+  render() {
+    return (
+      <div className="card">
+        <a className='link' href={this.props.Link}>{this.props.name}</a>
+        <button className="done" onClick={this.handleClick} name={this.props.type}>
+          DONE
+        </button>
+      </div>
+    );
+  }
 };
 
 export const mapDispatchToProps = (dispatch) => ({

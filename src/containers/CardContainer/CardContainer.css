@@ -22,28 +22,27 @@
 
 .small-container {
   border-radius: 10px;
+  background-color: #FFFFFF;
   overflow-x: scroll;
   overflow-y: hidden;
-  background-color: #FFFFFF;
   padding: 0px 40px 20px 40px;
 }
 
 .titles {
+  color: #808080;
   font-family: ‘Montserrat’, sans-serif;
   font-weight: 200;
-  color: #808080;
 }
 
 .summary {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   background-color: #3376E8;
   border-radius: 10px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
   grid-area: a;
   padding: 0px 40px 0px 40px;
-  width: 90%;
-  color: #FFFFFF;
 }
 
 .how {
