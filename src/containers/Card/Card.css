@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #F5F5F5;
+}
+
+.done {
+  border: none;
+  border: 1px solid #F3A547;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #666666;
+}
+
+.done:hover {
+  background-color: #3376E8;
+  border-color: #3376E8;
+  color: #FFFFFF
+}
+
+.link {
+  text-decoration: none;
+  color: #3376E8;
+  line-height: 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

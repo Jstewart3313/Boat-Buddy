@@ -4,8 +4,9 @@ import { connect } from "react-redux";
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
 import { tvShowAction } from "../../actionCreators/tvShow";
+import  Summary  from '../Summary/summary';
 import * as API from "../../util/helper/helper";
-import { Card } from '../Card/Card';
+import Card from '../Card/Card';
 import './CardContainer.css';
 
 export class CardContainer extends Component {
@@ -30,14 +31,18 @@ export class CardContainer extends Component {
       return <Card className='tv-card' {...show} />
     });
     return (
-      <div>
-        <div className='movie-container'>
-          { movieInfo }
-        </div>
-        <div className='music-container'>
+      <div className='container'>
+        < Summary />
+        <div className='music-container small-container'>
+          <h2 className='titles'>MUSIC</h2>
           { musicInfo }
         </div>
-        <div className='tv-container'>
+        <div className='movie-container small-container'>
+          <h2 className='titles'>MOVIES</h2>
+          { movieInfo }
+        </div>
+        <div className='tv-container small-container'>
+          <h2 className='titles'>SHOWS</h2>
           { TvShowInfo }
         </div>
       </div>

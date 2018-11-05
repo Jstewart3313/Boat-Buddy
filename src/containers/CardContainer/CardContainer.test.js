@@ -38,7 +38,6 @@ describe("mapStateToProps", () => {
         {
           name: "who knows",
           title: "another title",
-          teaser: "another teaser",
           Link: "www.Link.com"
         }
       ],
@@ -46,7 +45,6 @@ describe("mapStateToProps", () => {
         {
           name: "who knows",
           title: "another title",
-          teaser: "another teaser",
           Link: "www.Link.com"
         }
       ],
@@ -54,7 +52,6 @@ describe("mapStateToProps", () => {
         {
           name: "who knows",
           title: "another title",
-          teaser: "another teaser",
           Link: "www.Link.com"
         }
       ]

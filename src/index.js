@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import rootReducer from './reducers'
+import { rootReducer } from './reducers'
 import './index.css';
 import App from './containers/App/App';
 
@@ -11,7 +11,6 @@ const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_
 
 
 const store = createStore(rootReducer, devTools)
-console.log(store)
 
 
 ReactDOM.render(

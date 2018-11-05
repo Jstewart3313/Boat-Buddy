@@ -1,14 +1,18 @@
-import { combineReducers } from 'redux';
-import { movieReducer } from './movieReducer';
-import { musicReducer } from './musicReducer';
-import { tvShowReducer } from './tvShowReducer';
+import { combineReducers } from "redux";
+import { movieReducer } from "./movieReducer";
+import { musicReducer } from "./musicReducer";
+import { tvShowReducer } from "./tvShowReducer";
+import { incrementMovieReducer } from "./incrementMovieReducer";
+import { incrementMusicReducer } from "./incrementMusicReducer";
+import { incrementTvShowReducer } from "./incrementTvShowReducer";
 
-
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   movies: movieReducer,
   music: musicReducer,
-  tvShow: tvShowReducer
-})
+  tvShow: tvShowReducer,
+  movieCounter: incrementMovieReducer,
+  musicCounter: incrementMusicReducer,
+  tvShowCounter: incrementTvShowReducer
+});
 
 
-export default rootReducer;

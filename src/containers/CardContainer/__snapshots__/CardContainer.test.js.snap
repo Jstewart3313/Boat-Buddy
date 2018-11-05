@@ -2,11 +2,35 @@
 
 exports[`CardContainer should match the snapshop 1`] = `
 <div>
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
-  <Card />
+  <div
+    className="movie-container"
+  >
+    <Card
+      className="movie-card"
+    />
+    <Card
+      className="movie-card"
+    />
+  </div>
+  <div
+    className="music-container"
+  >
+    <Card
+      className="music-card"
+    />
+    <Card
+      className="music-card"
+    />
+  </div>
+  <div
+    className="tv-container"
+  >
+    <Card
+      className="tv-card"
+    />
+    <Card
+      className="tv-card"
+    />
+  </div>
 </div>
 `;
