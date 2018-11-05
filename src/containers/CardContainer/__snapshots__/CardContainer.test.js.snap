@@ -1,34 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardContainer should match the snapshop 1`] = `
-<div>
+<div
+  className="container"
+>
+  <Connect(Summary) />
   <div
-    className="movie-container"
+    className="music-container small-container"
   >
-    <Card
+    <h2
+      className="titles"
+    >
+      MUSIC
+    </h2>
+    <Connect(Card)
+      className="music-card"
+    />
+    <Connect(Card)
+      className="music-card"
+    />
+  </div>
+  <div
+    className="movie-container small-container"
+  >
+    <h2
+      className="titles"
+    >
+      MOVIES
+    </h2>
+    <Connect(Card)
       className="movie-card"
     />
-    <Card
+    <Connect(Card)
       className="movie-card"
     />
   </div>
   <div
-    className="music-container"
+    className="tv-container small-container"
   >
-    <Card
-      className="music-card"
-    />
-    <Card
-      className="music-card"
-    />
-  </div>
-  <div
-    className="tv-container"
-  >
-    <Card
+    <h2
+      className="titles"
+    >
+      SHOWS
+    </h2>
+    <Connect(Card)
       className="tv-card"
     />
-    <Card
+    <Connect(Card)
       className="tv-card"
     />
   </div>
