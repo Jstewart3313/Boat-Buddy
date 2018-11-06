@@ -23,20 +23,24 @@ export class Card extends Component {
       this.props.incrementMovie(name);
     } else if (name === "show" && !this.state.done) {
       this.props.incrementTvShow(name);
-    } else if( name === "music" && !this.state.done) {
+    } else if (name === "music" && !this.state.done) {
       this.props.incrementMusic(name);
     }
   };
   render() {
     return (
       <div className={this.state.done ? "disabled" : "card"}>
-        <a className={this.state.done ? 'link-disabled' : "link"}
-           href={this.props.Link}>
-          {this.props.name}
-        </a>
+        <div className='around-link'>
+          <a
+            className={this.state.done ? "link-disabled" : "link"}
+            href={this.props.Link}
+          >
+            {this.props.name}
+          </a>
+        </div>
         <button
           disabled={this.state.done}
-          className={this.state.done ? 'done-disabled' : "done"}
+          className={this.state.done ? "done-disabled" : "done"}
           onClick={this.handleClick}
           name={this.props.type}
         >

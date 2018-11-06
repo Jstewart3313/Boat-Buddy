@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-  "a a a b"
+  "a a b b"
   "c c d d"
 }
 
@@ -43,8 +43,74 @@
   flex-direction: column;
   grid-area: a;
   padding: 0px 40px 0px 40px;
+  width: 90%;
 }
 
 .how {
   text-align: left;
 }
+
+
+@media only screen and (max-width: 1085px) {
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c d d"
+  }
+  .movie-container {
+    grid-area: c;
+  
+  }
+  .tv-container {
+    grid-area: d;
+  }
+  
+  .music-container {
+    grid-area: b;
+    width: 85%;
+    overflow: scroll;
+    margin: 0 auto;
+  }
+  .summary {
+    grid-area: a;
+  }
+  .music-title {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "a "
+    "b "
+    "c "
+    "d "
+  }
+  .movie-container {
+    grid-area: c;
+  }
+  .tv-container {
+    grid-area: d;
+  }
+  
+  .music-container {
+    grid-area: b;
+  }
+  .summary {
+    grid-area: a;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .summary {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

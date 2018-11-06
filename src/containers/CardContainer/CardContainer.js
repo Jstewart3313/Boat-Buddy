@@ -34,7 +34,7 @@ export class CardContainer extends Component {
       <div className='container'>
         < Summary />
         <div className='music-container small-container'>
-          <h2 className='titles'>MUSIC</h2>
+          <h2 className='titles music-title'>MUSIC</h2>
           { musicInfo }
         </div>
         <div className='movie-container small-container'>
