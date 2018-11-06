@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summary should match the snapshot 1`] = `
+<div
+  className="summary"
+>
+  <h2>
+    Movies: 
+     
+  </h2>
+  <h2>
+    Music: 
+     
+  </h2>
+  <h2>
+    Shows: 
+     
+  </h2>
+  <p
+    className="how"
+  >
+    HOW TO PLAY: Each month their will be a new list of hot titles for you to check out, encouraging anyone on the water to stay off of social media and expand your knowledge on new movies, music and tv-shows.
+  </p>
+  <p
+    className="invite"
+  >
+    Invite your friends and win challenges by keeping your watch count sky high!
+  </p>
+</div>
+`;

@@ -22,13 +22,13 @@ export class CardContainer extends Component {
   render() {
     const { movies, music, tvShow } = this.props;
     const movieInfo = movies.map( movie => {
-      return <Card className='movie-card' {...movie} />
+      return <Card className='movie-card' key={movie.id} {...movie} />
     });
     const musicInfo = music.map( music => {
-      return <Card className='music-card' {...music} />
+      return <Card className='music-card' key={music.id} {...music} />
     });
     const TvShowInfo = tvShow.map(show => {
-      return <Card className='tv-card' {...show} />
+      return <Card className='tv-card' key={show.id} {...show} />
     });
     return (
       <div className='container'>

@@ -15,16 +15,16 @@ describe("CardContainer", () => {
   it("should match the snapshop", () => {
     const mockStore = configureMockStore();
     const initialState = {
-      movies: [{ id: 1 }, { id: 2 }],
-      music: [{ id: 3 }, { id: 4 }],
-      TvShow: [{ id: 5 }, { id: 6 }]
+      movies: [{ key: 1 }, { key: 2 }],
+      music: [{ key: 3 }, { key: 4 }],
+      TvShow: [{ key: 5 }, { key: 6 }]
     };
     const store = mockStore(initialState);
     let wrapper = shallow(
       <CardContainer
-        movies={[{}, {}]}
-        music={[{}, {}]}
-        tvShow={[{}, {}]}
+        movies={[{key:1 }, {key:2 }]}
+        music={[{key:3 }, {key:4 }]}
+        tvShow={[{key:5 }, {key:6 }]}
         store={store}
       />
     );

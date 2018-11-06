@@ -20,7 +20,7 @@ export const Summary = props => {
   );
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   movieCount: state.movieCounter,
   tvShowCount: state.tvShowCounter,
   musicCount: state.musicCounter

@@ -15,9 +15,11 @@ exports[`CardContainer should match the snapshop 1`] = `
     </h2>
     <Connect(Card)
       className="music-card"
+      key="3"
     />
     <Connect(Card)
       className="music-card"
+      key="4"
     />
   </div>
   <div
@@ -30,9 +32,11 @@ exports[`CardContainer should match the snapshop 1`] = `
     </h2>
     <Connect(Card)
       className="movie-card"
+      key="1"
     />
     <Connect(Card)
       className="movie-card"
+      key="2"
     />
   </div>
   <div
@@ -45,9 +49,11 @@ exports[`CardContainer should match the snapshop 1`] = `
     </h2>
     <Connect(Card)
       className="tv-card"
+      key="5"
     />
     <Connect(Card)
       className="tv-card"
+      key="6"
     />
   </div>
 </div>

@@ -71,5 +71,8 @@ export const mockState = {
       title: "another title",
       Link: "www.Link.com"
     }
-  ]
+  ],
+  movieCounter: 0,
+  musicCounter: 0,
+  tvShowCounter: 0
 }
