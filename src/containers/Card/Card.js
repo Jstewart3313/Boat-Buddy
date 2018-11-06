@@ -5,44 +5,55 @@ import { incrementMusicAction } from "../../actionCreators/incrementMusicAction"
 import { incrementMovieAction } from "../../actionCreators/incrementMovieAction";
 import { incrementTvShowAction } from "../../actionCreators/incrementTvShowAction";
 
-export class Card extends Component{
+export class Card extends Component {
   constructor() {
     super();
     this.state = {
       done: false
-    }
+    };
   }
   handleClick = event => {
     const { name } = event.target;
     if (this.state.done === false) {
-      this.setState({ done: true })
+      this.setState({ done: true });
     } else {
-      this.setState({ done: false})
+      this.setState({ done: false });
     }
-    if (name === "movie") {
+    if (name === "movie" && !this.state.done) {
       this.props.incrementMovie(name);
-    } else if (name === "show") {
+    } else if (name === "show" && !this.state.done) {
       this.props.incrementTvShow(name);
-    } else {
+    } else if( name === "music" && !this.state.done) {
       this.props.incrementMusic(name);
     }
   };
   render() {
     return (
-      <div className="card">
-        <a className='link' href={this.props.Link}>{this.props.name}</a>
-        <button className="done" onClick={this.handleClick} name={this.props.type}>
+      <div className={this.state.done ? "disabled" : "card"}>
+        <a className={this.state.done ? 'link-disabled' : "link"}
+           href={this.props.Link}>
+          {this.props.name}
+        </a>
+        <button
+          disabled={this.state.done}
+          className={this.state.done ? 'done-disabled' : "done"}
+          onClick={this.handleClick}
+          name={this.props.type}
+        >
           DONE
         </button>
       </div>
     );
   }
-};
+}
 
-export const mapDispatchToProps = (dispatch) => ({
-  incrementMovie: (name) => dispatch(incrementMovieAction(name)),
-  incrementMusic: (name) => dispatch(incrementMusicAction(name)),
-  incrementTvShow: (name) => dispatch(incrementTvShowAction(name))
+export const mapDispatchToProps = dispatch => ({
+  incrementMovie: name => dispatch(incrementMovieAction(name)),
+  incrementMusic: name => dispatch(incrementMusicAction(name)),
+  incrementTvShow: name => dispatch(incrementTvShowAction(name))
 });
 
-export default connect(null , mapDispatchToProps)(Card);
+export default connect(
+  null,
+  mapDispatchToProps
+)(Card);
