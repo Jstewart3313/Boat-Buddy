@@ -2,7 +2,7 @@
 A socially responsible application for Scuba-divers and boaters alike to stay off of social media while out on the water. A monthly challenge app that suggests movies, music, and tv-shows for you to watch to earn points.
 
 ### See it Live
-[See it Live here!](https://jstewart3313.github.io/Boat-Buddy/.)
+[See it Live here!]( https://jstewart3313.github.io/Boat-Buddy/)
 
 ### APIs Used
 * tasteDive API 
