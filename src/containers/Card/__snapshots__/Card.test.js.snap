@@ -4,11 +4,16 @@ exports[`Card should match the snapshot 1`] = `
 <div
   className="card"
 >
-  <a
-    className="link"
-  />
+  <div
+    className="around-link"
+  >
+    <a
+      className="link"
+    />
+  </div>
   <button
     className="done"
+    disabled={false}
     onClick={[Function]}
   >
     DONE

@@ -1,17 +1,17 @@
 import { key } from "./key";
 
 export const musicUrl =
-  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=music&limit=10&q=redhotchilipeppers";
+  `https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=${key}&info=1&type=music&limit=10&q=redhotchilipeppers`;
 
 
 
 export const movieUrl =
-  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=movie&limit=10&q=deadpool";
+  `https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=${key}&info=1&type=movie&limit=10&q=deadpool`;
 
 
 
 export const tvUrl =
-  "https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=322747-BoatBudd-C4GSW51X&info=1&type=tvshow&limit=10&q=discovery";
+  `https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=${key}&info=1&type=tvshow&limit=10&q=discovery`;
 
 export const mockResult = {
   Similar: {

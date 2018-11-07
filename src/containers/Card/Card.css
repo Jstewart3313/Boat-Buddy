@@ -1,36 +1,36 @@
 .card {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #F5F5F5;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #FFFFFF;
-  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 10px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #F5F5F5;
+  padding-top: 5px;
+  width: 100%;
 }
 
 .disabled {
+  align-items: center;
+  background-color: #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  width: 100%;
-  background-color: #F5F5F5;
-  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 10px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #F5F5F5;
+  padding-top: 5px;
+  width: 100%;
 }
 
 .done {
   border: none;
   border: 1px solid #F3A547;
   border-radius: 10px;
-  cursor: pointer;
   color: #666666;
+  cursor: pointer;
 }
 
 .done:hover {
@@ -48,15 +48,15 @@
 }
 
 .link-disabled {
-  text-decoration: none;
   color: #666666;
   line-height: 5px;
+  text-decoration: none;
 }
 
 .link {
-  text-decoration: none;
   color: #3376E8;
   line-height: 5px;
+  text-decoration: none;
 }
 
 .link:hover {

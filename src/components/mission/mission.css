@@ -1,8 +1,8 @@
 .mission-text {
-  border-radius: 10px;
   background-color: #3376E8;
+  border-radius: 10px;
   color: #FFFFFF;
   height: 500px;
-  padding: 10px 40px 10px 40px;
   line-height: 40px;
+  padding: 10px 40px 10px 40px;
 }

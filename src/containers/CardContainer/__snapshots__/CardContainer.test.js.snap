@@ -9,7 +9,7 @@ exports[`CardContainer should match the snapshop 1`] = `
     className="music-container small-container"
   >
     <h2
-      className="titles"
+      className="titles music-title"
     >
       MUSIC
     </h2>

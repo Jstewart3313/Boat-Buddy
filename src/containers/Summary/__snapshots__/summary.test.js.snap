@@ -4,18 +4,25 @@ exports[`Summary should match the snapshot 1`] = `
 <div
   className="summary"
 >
-  <h2>
-    Movies: 
-     
-  </h2>
-  <h2>
-    Music: 
-     
-  </h2>
-  <h2>
-    Shows: 
-     
-  </h2>
+  <div
+    className="counters"
+  >
+    <h2
+      className="movie-count one-count"
+    >
+      Movies: 
+    </h2>
+    <h2
+      className="music-count one-count"
+    >
+      Music: 
+    </h2>
+    <h2
+      className="show-count one-count"
+    >
+      Shows: 
+    </h2>
+  </div>
   <p
     className="how"
   >

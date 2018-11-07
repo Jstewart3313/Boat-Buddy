@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   margin: 20px 0px 0px 0px;
+  width: 100%;
 }
 
 .one-count {
