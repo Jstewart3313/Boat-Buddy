@@ -32,13 +32,9 @@ Additional enhancments could include :
 
 ### ScreenShots
 
-#### Wireframe
-
-![Wireframe](./public/img/wireframe.png)
-
 #### Desktop Version
 
-![Wireframe](./public/img/screesnhot.png)
+![screenshot](./public/img/screenshot.png)
 
 ### Original Assignment
 
