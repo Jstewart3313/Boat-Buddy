@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+
 import "./summary.css";
 
 export const Summary = props => {
@@ -28,6 +30,12 @@ export const mapStateToProps = state => ({
   tvShowCount: state.tvShowCounter,
   musicCount: state.musicCounter
 });
+
+Summary.propTypes = {
+  movieCount: PropTypes.number,
+  tvShowCount: PropTypes.number,
+  musicCount: PropTypes.number
+}
 
 export default connect(
   mapStateToProps,

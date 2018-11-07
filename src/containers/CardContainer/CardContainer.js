@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+
 
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
@@ -61,6 +63,15 @@ export const mapDispatchToProps = dispatch => ({
   onLoadMusic: music => dispatch(musicAction(music)),
   onLoadTvShow: tvShow => dispatch(tvShowAction(tvShow))
 });
+
+CardContainer.propTypes = {
+  movies: PropTypes.array,
+  music: PropTypes.array,
+  tvShow: PropTypes.array,
+  onLoadMovies: PropTypes.func,
+  onLoadMusic: PropTypes.func,
+  onLoadTvShow: PropTypes.func,
+}
 
 export default connect(
   mapStateToProps,

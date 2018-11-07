@@ -1,5 +1,4 @@
-import {key} from "../key.js";
-
+import { key } from "../key.js";
 
 const dataCleaner = data => {
   return data.Results.map(dataPoint => ({
@@ -35,8 +34,7 @@ export const getMovie = async input => {
 };
 
 export const getTv = async input => {
-  const url =
-    `https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=${key}&info=1&type=tvshow&limit=10&q=discovery`;
+  const url = `https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?k=${key}&info=1&type=tvshow&limit=10&q=discovery`;
 
   const response = await fetch(url);
   if (response.ok) {

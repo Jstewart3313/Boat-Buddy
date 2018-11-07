@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+
 import "./Card.css";
 import { incrementMusicAction } from "../../actionCreators/incrementMusicAction";
 import { incrementMovieAction } from "../../actionCreators/incrementMovieAction";
@@ -56,6 +58,12 @@ export const mapDispatchToProps = dispatch => ({
   incrementMusic: name => dispatch(incrementMusicAction(name)),
   incrementTvShow: name => dispatch(incrementTvShowAction(name))
 });
+
+Card.propTypes = {
+  incrementMovie: PropTypes.func,
+  incrementMusic: PropTypes.func,
+  incrementTvShow: PropTypes.func
+}
 
 export default connect(
   null,
