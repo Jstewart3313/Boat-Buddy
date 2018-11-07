@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+
 
 import { movieAction } from "../../actionCreators/movie";
 import { musicAction } from "../../actionCreators/music";
@@ -22,19 +24,19 @@ export class CardContainer extends Component {
   render() {
     const { movies, music, tvShow } = this.props;
     const movieInfo = movies.map( movie => {
-      return <Card className='movie-card' {...movie} />
+      return <Card className='movie-card' key={movie.id} {...movie} />
     });
     const musicInfo = music.map( music => {
-      return <Card className='music-card' {...music} />
+      return <Card className='music-card' key={music.id} {...music} />
     });
     const TvShowInfo = tvShow.map(show => {
-      return <Card className='tv-card' {...show} />
+      return <Card className='tv-card' key={show.id} {...show} />
     });
     return (
       <div className='container'>
         < Summary />
         <div className='music-container small-container'>
-          <h2 className='titles'>MUSIC</h2>
+          <h2 className='titles music-title'>MUSIC</h2>
           { musicInfo }
         </div>
         <div className='movie-container small-container'>
@@ -61,6 +63,15 @@ export const mapDispatchToProps = dispatch => ({
   onLoadMusic: music => dispatch(musicAction(music)),
   onLoadTvShow: tvShow => dispatch(tvShowAction(tvShow))
 });
+
+CardContainer.propTypes = {
+  movies: PropTypes.array,
+  music: PropTypes.array,
+  tvShow: PropTypes.array,
+  onLoadMovies: PropTypes.func,
+  onLoadMusic: PropTypes.func,
+  onLoadTvShow: PropTypes.func,
+}
 
 export default connect(
   mapStateToProps,

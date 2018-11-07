@@ -14,5 +14,3 @@ export const rootReducer = combineReducers({
   musicCounter: incrementMusicReducer,
   tvShowCounter: incrementTvShowReducer
 });
-
-

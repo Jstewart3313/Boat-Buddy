@@ -41,7 +41,7 @@ describe("API", () => {
           json: () => Promise.resolve(mock.mockResult)
         })
       );
-      const expected = await API.getMovie('deadpool')
+      const expected = await API.getMovie("deadpool");
       expect(await API.getMovie("deadpool")).toEqual(expected);
     });
   });

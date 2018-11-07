@@ -27,17 +27,18 @@ Boat Buddy uses Jest and Enzyme for all testing purposes
 
 ### Next Steps
 Additional enhancments could include :
-[ add additions at deadline]
+* Allow user to refresh challenges and continue more if they complete the default categories.
+* 
 
 ### ScreenShots
 
 #### Wireframe
 
-![Wireframe](./public/.png)
+![Wireframe](./public/img/wireframe.png)
 
 #### Desktop Version
 
-![Wireframe](./public/.png)
+![Wireframe](./public/img/screesnhot.png)
 
 ### Original Assignment
 

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="around-link"
+  >
+    <a
+      className="link"
+    />
+  </div>
+  <button
+    className="done"
+    disabled={false}
+    onClick={[Function]}
+  >
+    DONE
+  </button>
+</div>
+`;

@@ -5,10 +5,31 @@ h1 {
   font-weight: 300;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.active {
+  color: #3376E8;
+  text-decoration: underline;
+}
+
+.mission-link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.home-link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
-  margin: 0px 90px 0px 90px;
   background-color: #E5E8F4;
+  margin: 0px 90px 0px 90px;
+  text-align: center;
 }
 
 

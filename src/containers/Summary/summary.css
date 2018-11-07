@@ -1,0 +1,24 @@
+.counters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+}
+
+.one-count {
+  border: 2px #FFFFFF solid;
+  border-radius: 10px;
+  padding: 0px 5px 0px 5px;
+}
+
+.how {
+  margin: 75px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .counters {
+    display: flex;
+    flex-direction: column;
+  }
+}

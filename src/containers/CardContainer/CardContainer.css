@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-  "a a a b"
+  "a a b b"
   "c c d d"
 }
 
@@ -22,26 +22,95 @@
 
 .small-container {
   border-radius: 10px;
-  overflow-x: scroll;
-  overflow-y: hidden;
   background-color: #FFFFFF;
   padding: 0px 40px 20px 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .titles {
+  color: #808080;
   font-family: ‘Montserrat’, sans-serif;
   font-weight: 200;
-  color: #808080;
 }
 
 .summary {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   background-color: #3376E8;
   border-radius: 10px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
   grid-area: a;
   padding: 0px 40px 0px 40px;
   width: 90%;
-  color: #FFFFFF;
 }
+
+.how {
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 1085px) {
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c d d"
+  }
+  .movie-container {
+    grid-area: c;
+  
+  }
+  .tv-container {
+    grid-area: d;
+  }
+  
+  .music-container {
+    grid-area: b;
+    margin: 0 auto;
+    overflow: scroll;
+    width: 85%;
+  }
+  .summary {
+    grid-area: a;
+  }
+  .music-title {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "a "
+    "b "
+    "c "
+    "d "
+  }
+  .movie-container {
+    grid-area: c;
+  }
+  .tv-container {
+    grid-area: d;
+  }
+  
+  .music-container {
+    grid-area: b;
+  }
+  .summary {
+    grid-area: a;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .summary {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
