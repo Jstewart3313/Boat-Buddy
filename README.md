@@ -2,7 +2,7 @@
 An application for Scuba-diver and boaters alike to keep track of their favorite reads and watches while out on the water.
 
 ### See it Live
-Coming soon!
+[See it Live here!](https://jstewart3313.github.io/Boat-Buddy/.)
 
 ### APIs Used
 * tasteDive API 
@@ -28,7 +28,6 @@ Boat Buddy uses Jest and Enzyme for all testing purposes
 ### Next Steps
 Additional enhancments could include :
 * Allow user to refresh challenges and continue more if they complete the default categories.
-* 
 
 ### ScreenShots
 
