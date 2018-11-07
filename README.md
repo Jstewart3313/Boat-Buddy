@@ -1,5 +1,5 @@
 # Boat Buddy
-An application for Scuba-diver and boaters alike to keep track of their favorite reads and watches while out on the water.
+A socially responsible application for Scuba-divers and boaters alike to stay off of social media while out on the water. A monthly challenge app that suggests movies, music, and tv-shows for you to watch to earn points.
 
 ### See it Live
 [See it Live here!](https://jstewart3313.github.io/Boat-Buddy/.)
@@ -28,6 +28,8 @@ Boat Buddy uses Jest and Enzyme for all testing purposes
 ### Next Steps
 Additional enhancments could include :
 * Allow user to refresh challenges and continue more if they complete the default categories.
+* Allow users to invite friends to private challenges.
+* Allow customers to remove categories && add Books as a 4 category
 
 ### ScreenShots
 
